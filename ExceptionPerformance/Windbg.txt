@@ -1,0 +1,18 @@
+﻿Abrir Windbg x86
+Ctrl+E
+Selecionar o executavel
+
+.symfix c:\symbols\public
+sxe ld clr
+g
+sxd ld clr
+bp clr!RunMain
+g
+bp clr!MethodDesc::DoPrestub
+g
+gu
+gu
+gu
+.loadby sos clr
+!bpmd ExceptionPerformance ExceptionPerformance.Program.Main
+g
