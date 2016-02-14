@@ -32,6 +32,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NBench, Version=0.1.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\NBench.Runner.0.1.5\lib\net45\NBench.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NBench.Runner, Version=0.1.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\NBench.Runner.0.1.5\lib\net45\NBench.Runner.exe</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -42,11 +50,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExceptionPerformanceTest.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Windbg.txt" />
